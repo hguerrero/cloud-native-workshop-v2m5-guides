@@ -1,14 +1,10 @@
-The CCN Roadshow(Dev Track) Module 4 Guide 2019
+The CCN Roadshow(Dev Track) Module 5 Guide 2019
 ===
-This module enables developers not only to design event-driven services, cachable services but implement them on combined application runtimes and Kubernetes/OpenShift cluster.
-The developers also will learn how to run existing microserivce to serverless application via Knative, Quarkus, and OpenShift.
+The developers will learn how to run existing microservice to serverless application via Knative, Quarkus, and OpenShift.
 
 Agenda
 ===
-* Getting Started with Advanced Cloud-Native App Dev
-* Creating High-performing Cachable Service
-* Creating Event-Driven Service
-* Apache Kafka and Change Data Capture
+* Evolving Serverless Service
 
 Lab Instructions on OpenShift
 ===
@@ -18,17 +14,17 @@ Note that if you have installed the lab infra via APB, the lab instructions are 
 Here is an example Ansible playbook to deploy the lab instruction to your OpenShift cluster manually.
 
 ```
-- name: Create Guides Module 4
+- name: Create Guides Module 5
   hosts: localhost
   tasks:
   - import_role:
       name: siamaksade.openshift_workshopper
     vars:
-      project_name: "guide-m4"
-      workshopper_name: "Cloud-Native Workshop V2 Module-4"
+      project_name: "guide-m5"
+      workshopper_name: "Cloud-Native Workshop V2 Module-5"
       project_suffix: "-XX"
       workshopper_content_url_prefix: https://raw.githubusercontent.com/RedHat-Middleware-Workshops/cloud-native-workshop-v2m4-guides/master
-      workshopper_workshop_urls: https://raw.githubusercontent.com/RedHat-Middleware-Workshops/cloud-native-workshop-v2m4-guides/master/_cloud-native-workshop-module4.yml
+      workshopper_workshop_urls: https://raw.githubusercontent.com/RedHat-Middleware-Workshops/cloud-native-workshop-v2m5-guides/master/_cloud-native-workshop-module5.yml
       workshopper_env_vars:
         PROJECT_SUFFIX: "-XX"
         COOLSTORE_PROJECT: coolstore{{ project_suffix }}
