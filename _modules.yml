@@ -1,0 +1,8 @@
+config:
+    renderer: asciidoc
+
+modules:
+  workshop-environment:
+    name: Your Workshop Environment
+  evolve-serverless-services:
+    name: Evolving Serverless Service

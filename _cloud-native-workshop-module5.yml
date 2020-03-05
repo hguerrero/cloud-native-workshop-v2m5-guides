@@ -1,0 +1,23 @@
+id: "cloudnative"
+name: "The Containers and Cloud-Native Roadshow Dev Track - Module 5"
+
+content:
+  url: https://raw.githubusercontent.com/hguerrero/cloud-native-workshop-v2m5-guides/master
+
+vars:
+  ROUTE_SUBDOMAIN:
+  MASTER_URL:
+  CONSOLE_URL:
+  ECLIPSE_CHE_URL:
+  KEYCLOAK_URL:
+  GIT_URL:
+  CHE_USER_NAME:
+  CHE_USER_PASSWORD:
+  OPENSHIFT_USER_NAME:
+  OPENSHIFT_USER_PASSWORD:
+  RHAMT_URL:
+
+modules:
+  activate:
+  - workshop-environment
+  - evolve-serverless-services
